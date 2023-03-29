@@ -2,8 +2,7 @@
 
 /**
  * _printf - Printf function
- * @format: format
- *
+ * @format: format.
  * Return: Printed chars.
  */
 int _printf(const char *format, ...)
@@ -25,7 +24,7 @@ int _printf(const char *format, ...)
 			buffer[buff_ind++] = format[i];
 			if (buff_ind == BUFF_SIZE)
 				print_buffer(buffer, &buff_ind);
-			/* write(1, &format[i], 1);*/
+			
 			printed_chars++;
 		}
 		else
@@ -50,7 +49,6 @@ int _printf(const char *format, ...)
 
 	return (printed_chars);
 }
-
 
 /**
  * print_buffer - Prints the contents of the buffer if it exist
